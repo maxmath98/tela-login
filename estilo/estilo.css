@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body /* Não tem classe nem Id */{
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.container{
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+}
+.container p{
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
+}
+.container span{
+    font-size: 12px;
+}
+
+.container a{
+    color: red;
+    font-size: 13px;
+    text-decoration:  none; /* Remove tudo que for underline */
+    margin: 15px 0 15px;
+}
+.container button{
+    background: purple; /* Cor do fundo da letra */
+    color: #c9d6ff; /* Cor da letra */
+    font-size: 12px;
+    padding: 10px 45px; /* Comprimento do botão */
+    /* border: 1px solid transparent; */     /* Essa borda remove a sombra que fica nas bordas mas preferi sem */
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.container button.hidden{
+    background: transparent;
+    border-color: #e6e6e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+}
+.container input{
+    background: #eeefff;
+    border: 0;
+    margin: 8px 0;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+
+.form-container{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+.sign-in{
+    left: 0;
+    width: 50%;
+    z-index:2;
+}
